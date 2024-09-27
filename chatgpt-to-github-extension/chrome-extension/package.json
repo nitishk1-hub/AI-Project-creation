@@ -1,0 +1,16 @@
+{
+  "name": "chatgpt-to-github-extension",
+  "version": "1.0.0",
+  "description": "Push code from ChatGPT to GitHub with Firebase GitHub Authentication",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "babel-loader": "^9.1.0",
+    "firebase": "^9.14.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

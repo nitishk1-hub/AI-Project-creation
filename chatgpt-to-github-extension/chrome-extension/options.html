@@ -1,0 +1,53 @@
+<!-- chrome-extension/options.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChatGPT to GitHub - Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      width: 400px;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    label {
+      font-weight: bold;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .message {
+      margin-bottom: 10px;
+    }
+    .error {
+      color: red;
+    }
+    .success {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Project Settings</h1>
+  <div class="message" id="message"></div>
+  <label for="githubUsername">GitHub Username:</label>
+  <input type="text" id="githubUsername" placeholder="Enter your GitHub username">
+  <label for="githubRepo">Repository Name:</label>
+  <input type="text" id="githubRepo" placeholder="Enter your repository name">
+  <label for="githubBranch">Branch Name:</label>
+  <input type="text" id="githubBranch" placeholder="Enter your branch name (default: main)">
+  <label for="projectName">Project Name:</label>
+  <input type="text" id="projectName" placeholder="Enter your project name">
+  <button id="save">Save</button>
+  <button id="logout">Logout</button>
+  <script src="dist/options.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT to GitHub",
+  "version": "3.0",
+  "description": "Push code from ChatGPT to GitHub with Firebase GitHub Authentication",
+  "permissions": ["storage", "scripting", "activeTab", "identity"],
+  "host_permissions": ["https://chat.openai.com/*", "https://api.github.com/*"],
+  "background": {
+    "service_worker": "dist/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": ["dist/contentScript.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}
